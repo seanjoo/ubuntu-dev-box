@@ -2,7 +2,6 @@ Create a local self contained environment for app developerment/deployment.
 
 Includes Java, Maven, rvm
 
-
 ##Installation reqs
 
 * VirtualBox (tested w/ 5.0.16)
@@ -19,14 +18,10 @@ Includes Java, Maven, rvm
    ```
    vagrant plugin install vagrant-berkshelf
    ```
-   ** This step requires proxy setting is properly configured on your local machine.
-
   6. Install the Vagrant omnibus plugin: 
    ```
    vagrant plugin install vagrant-omnibus
-   ```
-  ** This step requires proxy setting is properly configured on your local machine.
-   
+   ```   
   7. Generate 'Vagrantfile' by executing the following by providing the path to your project directory:
   ```
   ruby config_vagrant.rb -l /path-to-your-project-to-be-mounted-on-vagrant-box

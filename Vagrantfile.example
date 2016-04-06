@@ -19,9 +19,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Ubuntu 14.04
   config.vm.box = "ubuntu/trusty64"
 
-  config.proxy.http     = "http://august.kdc.capitalone.com:8080"
-  config.proxy.https    = "http://august.kdc.capitalone.com:8080"
-  config.proxy.no_proxy = "localhost,127.0.0.1,.kdc.capitalone.com"
+  #config.proxy.http     = ""
+  #config.proxy.https    = ""
+  #config.proxy.no_proxy = ""
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
@@ -59,9 +59,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #config.omnibus.chef_version = "11.16.4"
 
   config.vm.provision :chef_solo do |chef|
-    chef.http_proxy   = "http://august.kdc.capitalone.com:8080"
-    chef.https_proxy = "http://august.kdc.capitalone.com:8080"
-    chef.no_proxy = "localhost,127.0.0.1,.kdc.capitalone.com"
+    #chef.http_proxy   = ""
+    #chef.https_proxy = ""
+    #chef.no_proxy = ""
+    
     chef.cookbooks_path = ["cookbooks"]
     chef.verbose_logging = true
     # chef.log_level = "debug"
