@@ -1,6 +1,6 @@
 Create a local self contained environment for app developerment/deployment.
 
-Includes Java, Maven, rvm
+Includes Java, Maven, rvm, mongodb
 
 ##Installation reqs
 

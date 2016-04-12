@@ -10,3 +10,4 @@ cookbook "python"
 cookbook "rvm", "=0.9.4"
 cookbook "java"
 cookbook 'maven', '~> 2.2.0'
+cookbook 'mongodb3', '~> 5.2.0'
